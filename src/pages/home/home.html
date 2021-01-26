@@ -1,0 +1,14 @@
+<ion-header>
+  <ion-navbar color="secondary">
+    <ion-title>
+      Trabalho Jorge Eduardo - TO-DO.
+    </ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only (click)="addItem()"><ion-icon name="add-circle-outline"></ion-icon></button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-item *ngFor="let item of items" (click)="viewItem(item)">{{item.title}}</ion-item>
+</ion-content>
